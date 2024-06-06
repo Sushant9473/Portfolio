@@ -1,7 +1,4 @@
-<h2 align="center">
-  [Portfolio Website](https://my-portfolio-mauve-zeta-94.vercel.app/)<br/>
-  
-</h2>
+# [Portfolio Website](https://my-portfolio-mauve-zeta-94.vercel.app/)<br/>
 
 <br/>
 
