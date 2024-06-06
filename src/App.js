@@ -1,18 +1,33 @@
-import './App.css';
-import Navbar from './Navbar';
-import Intro from './components/Intro';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
   return (
-    <div className='app'>
-      <header className='app-header'>
-        <h1>My Portfolio</h1>
+    <Router>
+      <div className="App">
         <Navbar />
-      </header>
-      <main>
-        <Intro />
-      </main>
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Home />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
