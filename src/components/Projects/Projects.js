@@ -7,6 +7,8 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import etch from "../../Assets/Projects/Etch.jpg";
+import snake from "../../Assets/Projects/snake.jpg";
 
 function Projects() {
   return (
@@ -21,21 +23,21 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={etch}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink=""
+              title="Etch-A-Sketch"
+              description="Etch A Sketch code simulates the classic toy digitally. Typically, it involves creating a virtual screen represented as a grid or image. Users interact with the code through inputs (like mouse movements or keyboard keys) to manipulate virtual knobs. These inputs modify the screen's state, drawing lines or shapes."
+              ghLink="https://github.com/Sushant9473/Etch-a-Sketch"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={snake}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
+              title="Classic Snake Game"
+              description="A classic Snake game built with JavaScript, HTML, and CSS. Navigate the snake to eat the food, grow longer, and avoid hitting the walls or itself. Features smooth animations and responsive controls."
+              ghLink="https://github.com/Sushant9473/Snake_game"
             />
           </Col>
 
@@ -45,7 +47,7 @@ function Projects() {
               isBlog={false}
               title="Editor.io"
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink=""             
+              ghLink=""
             />
           </Col>
 
