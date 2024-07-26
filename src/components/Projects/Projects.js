@@ -1,14 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import etch from "../../Assets/Projects/Etch.jpg";
 import snake from "../../Assets/Projects/snake.jpg";
+import music from "../../Assets/Projects/music.jpg";
+import todo from "../../Assets/Projects/todo.jpg";
+import quiz from "../../Assets/Projects/quiz.jpg";
 
 function Projects() {
   return (
@@ -43,35 +40,35 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={music}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink=""
+              title="Music Player"
+              description="A feature-rich music player built with modern web technologies. It supports various audio formats, playlists, and provides a sleek, user-friendly interface. Enjoy seamless playback, volume control, and track navigation."
+              ghLink="https://github.com/Sushant9473/Music-Player"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={todo}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink=""
+              title="Todo"
+              description="A simple and intuitive Todo application built with React. Manage your tasks efficiently with features like adding, editing, and deleting tasks. Stay organized and boost your productivity."
+              ghLink="https://github.com/Sushant9473/ReactProjects/tree/main/todo"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={quiz}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
+              title="Quiz App"
+              description="A simple Quiz App application build using vanilla Javascript . Test your programming skills by attempting this Quizz App"
+              ghLink="https://github.com/Sushant9473/WebDevQuiz"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
@@ -80,7 +77,7 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink=""
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
